@@ -1,0 +1,380 @@
+
+html {
+    scroll-behavior: smooth;
+   /* scrollbar-width: none; */
+   
+}
+
+
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    margin: 0px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; 
+}
+
+a, a:visited {
+
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+/*---------------------------------------------NAV BAR---------------------------------------------------*/
+/*---------------------------------------------NAV BAR---------------------------------------------------*/
+/*---------------------------------------------NAV BAR---------------------------------------------------*/
+/*---------------------------------------------NAV BAR---------------------------------------------------*/
+
+
+.navBar {
+    position: fixed;
+    height: 100px;
+    width: 100vw;
+   /*background-image: url(../images/headband.png); */
+   backdrop-filter: blur(5px) saturate(70%);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+   
+   
+    
+    margin: 0px;
+    padding: 0px;
+    z-index: 9999;
+    
+    
+}
+
+
+.navBtns {
+    display: inline;
+    position:absolute;
+    bottom: 5px;
+    right: 20px;
+    font-size: 1.8em;
+}
+
+.navBtn1 {
+    display: inline;
+    padding: 20px;
+    font-weight: 900;
+ 
+ 
+    
+
+}
+
+.navBtn2 {
+    display: inline;
+    padding: 20px;
+    font-weight: 900;
+    
+}
+
+.navBtn3 {
+    display: inline;
+    padding: 20px;
+    font-weight: 900;
+    
+}
+
+.navBtns a {
+
+    color:#10398c;
+}
+
+
+
+
+.navBar a:hover {
+    
+    color: orange;
+    text-shadow: 0 0 10px;
+    transform: translateY(-5px);
+ 
+
+}
+
+/*---------------------------------------------PAGE 1----------------------------------------------------*/
+/*---------------------------------------------PAGE 1----------------------------------------------------*/
+/*---------------------------------------------PAGE 1----------------------------------------------------*/
+/*---------------------------------------------PAGE 1----------------------------------------------------*/
+
+
+
+.page1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(138, 138, 138);
+
+}
+
+#mainHeader {
+    position: absolute;
+    display: flex;
+    z-index: 9998;
+    margin: 0px;
+    color: white;
+    background-color:#00000000;
+    border-radius: 10px;
+    font-size: 3em;
+   
+    text-align: center;
+    text-shadow: -7px 4px 10px rgb(0, 0, 0);
+
+    animation: transitionIn 2s;
+    
+   
+
+   
+}
+
+
+
+#backgroundVideo {
+   
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    object-fit: cover;
+}
+
+
+.learnButtonContainer{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items:end;
+  
+}
+    
+
+.learnButton {
+    
+    position: relative;
+    z-index: 9999;
+    
+    
+   
+    
+    font-weight: bolder;
+    font-size: 1em;
+    background-color: rgba(255, 166, 0, 0.381);
+    border-radius: 20px;
+    border: solid;
+    border-width: 0px;
+    padding: .9em;
+    backdrop-filter: blur(5px) saturate(70%);
+
+    transition: all 0.3s;
+    
+}
+
+.learnButton a {
+    color: rgb(255, 255, 255);
+    
+}
+
+
+
+
+.learnButton:hover, .learnButton:active {
+    transform: translateY(-3px);
+    font-size: 1.1em;
+    background-color: rgb(209, 136, 0);
+    
+
+    
+ 
+}
+
+
+
+
+
+/*--------------------------------------------PAGE 2-----------------------------------------------------*/
+/*--------------------------------------------PAGE 2-----------------------------------------------------*/
+/*--------------------------------------------PAGE 2-----------------------------------------------------*/
+/*--------------------------------------------PAGE 2-----------------------------------------------------*/
+
+
+/* Opaque white bar to go behind navbar when user scrolls into page 2 */
+.stickyBar {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    z-index: 9998;
+}
+
+
+.page2 {
+ 
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    background: rgb(255, 255, 255);
+}
+
+.portrait {
+    position: absolute;
+    height: 63.3%;
+    right: 7%;
+    top: 30%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    border-radius: 10px;
+}
+
+
+.blurbContainer  {
+    position: absolute;
+   
+    max-width: 60%;
+    height: 60%;
+    padding: 10px;
+    color: black;
+    background-color: rgb(226, 226, 226);
+    top: 30%;
+    left: 7%;
+    text-align: left;
+    font-size: 1.2em;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    border-radius: 10px;
+    
+}
+
+.learnMoreBtn {
+    position: absolute;
+    color: white;
+    background-color: orange;
+    font-size: 25px;
+    top: 490px;
+    left: 500px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+
+    padding: 10px;
+    
+
+
+    border-radius: 30px;
+    border: solid;
+    border-width: 0px;
+    
+
+    transition: all 0.3s;
+    
+}
+
+.learnMoreBtn:hover, .learnMoreBtn:active {
+    transform: translateY(-3px);
+    font-size: 26px;
+    background-color: rgb(255, 194, 80);
+    
+}
+
+.servicesBtn {
+    position: absolute;
+    color: white;
+    background-color: orange;
+    font-size: 25px;
+    top: 490px;
+    left: 10%;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    
+    border-radius: 30px;
+    border: solid;
+    border-width: 0px;
+    padding: 10px;
+ 
+
+    transition: all 0.3s;
+}
+
+.servicesBtn:hover, .servicesBtn:active {
+    transform: translateY(-3px);
+    font-size: 26px;
+    background-color: rgb(255, 194, 80);
+}
+
+
+
+.topBar2 {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 125px;
+    background-color: rgb(255, 255, 255);
+    z-index: 9998;
+
+
+}
+
+.galleryContainer {
+    height: 100vh;
+    background-color: rgb(194, 194, 183);
+    z-index: 999;
+    position: relative;
+}
+
+
+
+
+/*-----------------------------------FOOTER--------------------------------------------*/
+/*-----------------------------------FOOTER--------------------------------------------*/
+/*-----------------------------------FOOTER--------------------------------------------*/
+/*-----------------------------------FOOTER--------------------------------------------*/
+
+
+
+
+
+.footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    gap: 3em;
+
+    
+    height: 30vh;
+    width: 100vw;
+    background-color: #8a8a8a;
+}
+
+
+.footNote {
+    color: rgb(209, 209, 209);
+   
+    margin-top: 25px;
+    font-weight:bolder;
+    font-size: 1.2em;
+}
+
+.footNote a {
+    color: orange;
+}
+
+.footNote a:hover {
+    color: rgb(255, 199, 94);
+}

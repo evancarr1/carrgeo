@@ -1,0 +1,259 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    margin: 0px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0); 
+}
+
+
+
+a, a:visited {
+
+    text-decoration: none;
+    color: orange;
+
+    
+    
+}
+
+a:hover {
+    color: rgb(255, 197, 90);
+}
+
+/*------------------------------------NAV BAR---------------------------------------------------------*/
+/*------------------------------------NAV BAR---------------------------------------------------------*/
+/*------------------------------------NAV BAR---------------------------------------------------------*/
+/*------------------------------------NAV BAR---------------------------------------------------------*/
+
+
+
+.navBar {
+    position: fixed;
+    height: 100px;
+    width: 100vw;
+   /*background-image: url(../images/headband.png); */
+   backdrop-filter: blur(5px) saturate(70%);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+   
+   
+    
+    margin: 0px;
+    padding: 0px;
+    z-index: 9999;
+    
+    
+}
+
+
+.navBtns {
+    display: inline;
+    position:absolute;
+    bottom: 5px;
+    right: 20px;
+    font-size: 30px;
+    
+    
+
+}
+
+.homeBtn {
+    display: inline;
+    padding: 20px;
+    font-weight: 900;
+}
+
+.navBtn1 {
+    display: inline;
+    padding: 20px;
+    font-weight: 900;
+
+}
+
+.navBtn2 {
+    display: inline;
+    padding: 20px;
+    font-weight: 900;
+    
+}
+
+.navBtn3 {
+    display: inline;
+    padding: 20px;
+    font-weight: 900;
+    
+}
+
+.navBtns a {
+
+    color:#10398c;
+}
+
+
+
+
+.navBar a:hover {
+    
+    color: orange;
+    text-shadow: 0 0 10px;
+    transform: translateY(-5px);
+ 
+
+}
+
+/*---------------------------------------------PAGE 1-------------------------------------*/
+/*---------------------------------------------PAGE 1-------------------------------------*/
+/*---------------------------------------------PAGE 1-------------------------------------*/
+/*---------------------------------------------PAGE 1-------------------------------------*/
+
+
+.page1 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contentLeft {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    width: 65%;
+    height: 84.1%;
+    
+ 
+    margin-top: 10%;
+    background-color: rgba(210, 210, 210, 0);
+    border-radius: 10px;
+
+}
+
+#h1 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 3%;
+
+    height: 15px;
+}
+
+
+
+#blurb {
+    
+    top: 5%;
+    margin-left: 69px;
+    margin-right: 60px;
+    font-size: 1.2em;
+    margin-top: 0px;
+    background-color: rgba(128, 128, 128, 0);
+    height: fit-content;
+    
+}
+
+
+
+#servicesList {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    list-style: square;
+    background-color: rgb(226, 226, 226);
+    font-size: 1.3em;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+
+.contentRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    
+    
+    width: 35%;
+    height: 84.1%; 
+    margin-top: 100px;
+    background-color: rgba(144, 144, 144, 0);
+    border-radius: 10px;
+    
+
+}
+
+.photos {
+    margin-top: 13px;
+    width: 62.5%;
+    border-radius: 25px;
+    border-width: 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    
+}
+
+.contactBtn {
+    color: white;
+    background-color: orange;
+    font-size: 25px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    border: solid;
+    border-width: 0px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+ 
+
+    transition: all 0.3s;
+}
+
+.contactBtn:hover, .contactBtn:active {
+    transform: translateY(-3px);
+    font-size: 26px;
+    background-color: rgb(255, 194, 80);
+}
+
+.footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    gap: 3em;
+
+    
+    height: 30vh;
+    width: 100vw;
+    background-color: #8a8a8a;
+}
+
+
+.footNote {
+    color: rgb(209, 209, 209);
+   
+    margin-top: 25px;
+    font-weight:bolder;
+    font-size: 1.2em;
+}
+
+.footNote a {
+    color: orange;
+}
+
+.footNote a:hover {
+    color: rgb(255, 199, 94);
+}
